@@ -28,7 +28,6 @@ def format_transaction(url,blockheight,blockhash,flag=1):
             for tx in txs:
                 #注意该变量的定义位置
                 trans = {}
-                address = {}
                 address_name = 'addr'
                 trans['blockheight'] = blockheight
                 trans['blockhash'] = blockhash
@@ -54,9 +53,8 @@ def format_transaction(url,blockheight,blockhash,flag=1):
                         input_addrs.append(input['prev_out']['addr'])
                         input_values.append(input['prev_out']['value'])
                         
-                        if input['prev_out']['addr'] not in address.values():
-#                             addrs.append(input['prev_out']['addr'])
-                            address[address_name] = input['prev_out']['addr']
+                for input_addr in input_addrs:
+                    addrs.append(input_addr)
                     
                         
                 trans['input_addrs'] = input_addrs
@@ -68,8 +66,8 @@ def format_transaction(url,blockheight,blockhash,flag=1):
                     if 'addr' in output:
                         output_addrs.append(output['addr'])
                         
-                        if output['addr'] not in address.values():
-                            address[address_name] = output['addr']
+                        # if output['addr'] not in address.values():
+                        #     address['address_name'] = output['addr']
                         
                     else:
                         output_addrs.append("")
@@ -77,13 +75,19 @@ def format_transaction(url,blockheight,blockhash,flag=1):
                     if 'value' in output:
                         output_values.append(output['value'])
 
+                for output_addr in output_addrs:
+                    addrs.append(output_addr)
+
                 trans['output_addrs'] = output_addrs
-                trans['output_values'] = output_values       
+                trans['output_values'] = output_values  
+
+                # print(trans['input_addrs'])
+                # print(trans['output_addrs'])    
 
                 transactions.append(trans)
-                addrs.append(address)
+
         #print(len(transactions))
-        #print(len(addrs))
+        # print(addrs)
         if flag:
             return addrs
         else:
