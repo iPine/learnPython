@@ -10,21 +10,32 @@ from matplotlib import pyplot as plt
    
 
 class HighsLowsVisual():
-    """用于可视化最低温度和最高温度的折线"""
+    """用于可视化最低温度和最高温度的折线
+        可绘制一个数据，也可绘制两个数据
+    """
     
-    def __init__(self,dates,highs,lows):
+    def __init__(self,dates,highs,lows,dates1='',highs1='',lows1=''):
         self.dates = dates
         self.highs = highs
         self.lows = lows
+        self.dates1 = dates1
+        self.highs1 = highs1
+        self.lows1 = lows1
         
     def highs_lows_visual(self):
         """可视化最高温、最低温"""
         #根据数据绘制图形
         fig = plt.figure(dpi=128, figsize=(10, 6))
         plt.plot(self.dates,self.highs,c='red',alpha=0.5)
-        #在绘制一条折线
+        #再绘制一条折线
         plt.plot(self.dates,self.lows,c='blue',alpha=0.5)
-        plt.fill_between(self.dates, self.highs, self.lows, facecolor='blue', alpha=0.1)
+        plt.fill_between(self.dates, self.highs, self.lows, facecolor='blue', alpha=0.3)
+
+        #另一个数据
+        if self.dates1:
+            plt.plot(self.dates1,self.highs1,c='yellow',alpha=0.5)
+            plt.plot(self.dates1,self.lows1,c='green',alpha=0.5)
+            plt.fill_between(self.dates1, self.highs1, self.lows1, facecolor='blue', alpha=0.3)
 
         #设置图形格式
         title = "Daily high and low temperatures - 2014"
