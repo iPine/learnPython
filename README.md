@@ -1,10 +1,15 @@
-### My tests of learning Python
+## My tests of learning Python
 
-#### 爬取比特币数据
+### 爬取比特币数据
 - blockchain_related
 
-#### 《Python编程：从入门到实践》 练习
+### 《Python编程：从入门到实践》 练习
 - book_tests
 
-#### FCM算法
+#### Most-Starred Python Projects on GitHub 
+![演示](http://ipine.coding.me/learnPython/book_tests/project_practice/data_visualization/hapter17_use_API/python_repos.svg)
+
+
+
+### FCM算法
 - fcm_algorithm
