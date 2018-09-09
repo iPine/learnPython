@@ -6,9 +6,9 @@
 ### 《Python编程：从入门到实践》 练习
 - book_tests 
 
-#### <desc>Most-Starred Python Projects on GitHub
-![Alt text](https://raw.github.com/ipine/learnPython/book_tests/project_practice/data_visualization/chapter17_use_API/python_repos.svg?sanitize=true)
-<img src="https://raw.github.com/ipine/learnPython/book_tests/project_practice/data_visualization/chapter17_use_API/python_repos.svg?sanitize=true">
+#### <desc>Most-Starred Javascript Projects on GitHub
+![Alt text](https://raw.github.com/ipine/learnPython/book_tests/project_practice/data_visualization/chapter17_use_API/javascript_repos.svg?sanitize=true)
+<img src="https://raw.github.com/ipine/learnPython/book_tests/project_practice/data_visualization/chapter17_use_API/javascript_repos.svg?sanitize=true">
 
 
 
