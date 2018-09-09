@@ -7,7 +7,7 @@
 - book_tests 
 
 #### <desc>Most-Starred Python Projects on GitHub
-![演示](http://ipine.coding.me/learnPython/book_tests/project_practice/data_visualization/chapter17_use_API/python_repos.svg?sanitize=true)
+![演示](https://raw.github.com/iPine/learnPython/book_tests/project_practice/data_visualization/chapter17_use_API/python_repos.svg?sanitize=true)
 
 
 
