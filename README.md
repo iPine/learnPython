@@ -7,8 +7,8 @@
 - book_tests 
 
 #### <desc>Most-Starred Javascript Projects on GitHub
-![Alt text](https://raw.github.com/ipine/learnPython/book_tests/project_practice/data_visualization/chapter17_use_API/javascript_repos.svg?sanitize=true)
-<img src="https://raw.github.com/ipine/learnPython/book_tests/project_practice/data_visualization/chapter17_use_API/javascript_repos.svg?sanitize=true">
+![svg](http://ipine.coding.me/learnPython/book_tests/project_practice/data_visualization/chapter17_use_API/show_svg.html)
+
 
 
 
