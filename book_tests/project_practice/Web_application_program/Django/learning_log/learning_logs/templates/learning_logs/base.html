@@ -1,0 +1,7 @@
+<p>
+    <a href="{% url 'learning_logs:index' %}">Learning Log</a>
+    <a href="{% url 'learning_logs:topics' %}">Topics</a>
+</p>
+
+<!-- 插入的块标签 content ，是一个占位符，其中包含的信息将由子模板指定。 -->
+{% block content %}{% endblock content %}
