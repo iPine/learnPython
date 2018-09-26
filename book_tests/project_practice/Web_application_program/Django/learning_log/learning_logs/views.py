@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render, get_object_or_404
 #新网页new_topic的视图函数需要的包
 from django.http import HttpResponseRedirect, Http404
 # from django.core.urlresolvers import reverse
@@ -26,7 +26,8 @@ def topics(request):
 @login_required
 def topic(request,topic_id):
     """显示单个主题及其所有条目"""
-    topic = Topic.objects.get(id=topic_id)
+    # topic = Topic.objects.get(id=topic_id)
+    topic = get_object_or_404(Topic, id=topic_id)
     # 确认请求的主题属于当前用户
     # if topic.owner != request.user:
     #     raise Http404
@@ -58,7 +59,8 @@ def new_topic(request):
 @login_required
 def new_entry(request,topic_id):
     """在特定的主题中添加新条目"""
-    topic = Topic.objects.get(id=topic_id)
+    # topic = Topic.objects.get(id=topic_id)
+    topic = get_object_or_404(Topic, id=topic_id)
     check_topic_owner(request,topic.owner)
 
     if request.method != 'POST':
@@ -81,7 +83,8 @@ def new_entry(request,topic_id):
 @login_required
 def edit_entry(request, entry_id):
     """编辑既有条目"""
-    entry = Entry.objects.get(id=entry_id)
+    # entry = Entry.objects.get(id=entry_id)
+    entry = get_object_or_404(Entry, id=entry_id)
     topic = entry.topic
     # if topic.owner != request.user:
     #     raise Http404
