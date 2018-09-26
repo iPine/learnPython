@@ -1,0 +1,8 @@
+.ipynb_checkpoints
+__pycache__
+addrsdata/
+blockdata/
+address.json
+addressinfo.json
+height_hash.json
+transactions.json
