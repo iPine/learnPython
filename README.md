@@ -7,7 +7,8 @@
 - book_tests 
 
 #### <desc>Most-Starred Python Projects on GitHub
-[Python Projects](http://ipine.coding.me/learnPython/book_tests/project_practice/data_visualization/chapter17_use_API/python_repos.svg)
+<!-- ![Python Projects](./learnPython/book_tests/project_practice/data_visualization/chapter17_use_API/python_repos.svg) -->
+<img src="https://raw.github.com/iPine/learnPython/book_tests/project_practice/data_visualization/chapter17_use_API/python_repos.svg?sanitize=true">
 
 #### Project practice
 [Learning Log](https://learninglog-ipine.herokuapp.com/)
