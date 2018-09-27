@@ -16,4 +16,5 @@
 
 ### other_tests - 其他小练习
 - Animated graph
-![HeroinOverdosesJumpy](https://github.com/iPine/learnPython/other_tests/animated_graphs/HeroinOverdosesJumpy.gif)
+
+![HeroinOverdosesJumpy](https://github.com/iPine/learnPython/blob/master/other_tests/animated_graphs/HeroinOverdosesJumpy.gif)
